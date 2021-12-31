@@ -114,6 +114,44 @@ sudo chmod 777 -R /dev/kvm
 
 
 
+#!/bin/bash
+# autor Hamilton Ventura
+
+echo "#################################################"
+echo "########### INSTALAÇÃO AMBIENTE ROBOT ###########"
+echo "#################################################"
+
+sudo apt-get update
+sudo apt-get upgrade
+
+sudo add-apt-repository -y ppa:teejee2008/ppa
+sudo apt-get update
+sudo apt-get install timeshift
+
+sudo apt-get install pip3
+sudo pip3 install python3
+
+##bibliotecas do robot framework 
+sudo pip3 install robotframework
+sudo pip3 install robotframework-seleniumlibrary
+sudo pip3 install robotframework-databaselibrary
+
+##executar caso de algum erro 
+##sudo apt-get install python-tk python3-tk tk-dev
+
+sudo python3 -m pip3 install cx_Oracle
+sudo snap install code --classic
+
+##acesso a pasta de instalação 
+cd clienteOracle
+
+##validacao para execucao do arquivo 
+sudo chmod 777 oracle-instantclient-basic_21.1.0.0.0-2_amd64.deb
+
+##instalação do arquivo 
+sudo dpkg -i oracle-instantclient-basic_21.1.0.0.0-2_amd64.deb
+
+
 
 
 
