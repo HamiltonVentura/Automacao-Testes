@@ -1,6 +1,7 @@
 # ROBOTFRAMEWORK
 Utilização do Robot Framework  
 
+Fiz diversas pesquisas e cursos complementares que me ajudaram a desenvolver um projeto na antiga empresa que eu estava trabalhando. Como era algo novo na empresa me obriguei a aprender e desenvolver as habilidade necessárias.
 
 ![image](https://user-images.githubusercontent.com/16406050/147835594-db26d48b-43ea-4125-8831-f24d5c3c07d8.png)
 
@@ -23,7 +24,6 @@ PRINCIPAIS VANTAGENS
 
 
 PREPARANDO O AMBIENTE
-----------------------------------------------------------------------------------------------------------------------------------
 OBS: Os códigos descritos a baixo para instalação já estão na pasta “INSTALAÇÕES” no
 arquivo instalar.sh, onde será executado auitomaticamente.
 1º Copie os arquivos para sua máquina local
@@ -34,7 +34,7 @@ instalações;
 OBS: o Cliente Oracle e o Driver do Navegador de escolha precisam ser instalados
 manualmente. Caso algumas das instalações não dê certo procure códigos mais
 atualizados.
------------------------------------------------------------------------------------------------------------------------------------
+
 Antes da instalação de qualquer programa instale o TIMESHIFT, ele criará ponto de restauração,
 que evitará problemas, caso seja alterado variáveis do sistema ou diretórios que não devem ser
 alterados.
@@ -43,6 +43,7 @@ sudo apt-get update
 sudo apt-get install timeshift
 referência :
 https://www.edivaldobrito.com.br/aplicativo-de-restauracao-do-sistema/
+
 1 - O Python é a linguagem responsável para rodar o framework Robot, algumas bibliotecas
 utilizam o python na versão 3 por isso é importante instalar a versão mais recente.
 Sudo apt-get install pip3
@@ -50,6 +51,7 @@ Sudo pat-get install pip
 sudo pip install python
 
 sudo pip install python3
+
 2 – Execute a instalação do robot e as bibliotecas externas, do Selenium e da
 databaselibrary para conexão com banco de dados.
 2.1 pip install robotframework
