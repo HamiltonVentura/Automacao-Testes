@@ -115,7 +115,7 @@ sudo chmod 777 -R /dev/kvm
 
 
 #!/bin/bash
-# autor Hamilton Ventura
+#autor Hamilton Ventura
 
 echo "#################################################"
 echo "########### INSTALAÇÃO AMBIENTE ROBOT ###########"
