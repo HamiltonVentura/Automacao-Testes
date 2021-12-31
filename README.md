@@ -1,7 +1,7 @@
 # ROBOTFRAMEWORK
 Utilização do Robot Framework  
 
-Fiz diversas pesquisas e cursos complementares que me ajudaram a desenvolver um projeto na antiga empresa que eu estava trabalhando. Como era algo novo na empresa me obriguei a aprender e desenvolver as habilidade necessárias.
+Fiz diversas pesquisas e cursos complementares que me ajudaram a desenvolver um projeto na antiga empresa que eu estava trabalhando. Como era algo novo na empresa me obriguei a aprender e desenvolver as habilidade necessárias, em ambiente Linux.
 
 ![image](https://user-images.githubusercontent.com/16406050/147835594-db26d48b-43ea-4125-8831-f24d5c3c07d8.png)
 
