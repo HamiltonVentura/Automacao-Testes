@@ -23,7 +23,7 @@ PRINCIPAIS VANTAGENS
 8. Consultas automáticas
 
 
-PREPARANDO O AMBIENTE
+# PREPARANDO O AMBIENTE
 OBS: Os códigos descritos a baixo para instalação já estão na pasta “INSTALAÇÕES” no
 arquivo instalar.sh, onde será executado auitomaticamente.
 1º Copie os arquivos para sua máquina local
@@ -113,9 +113,9 @@ Para rodar a aplicação avd MANAGER – digite no terminal
 sudo chmod 777 -R /dev/kvm
 
 
-
-#!/bin/bash
-#autor Hamilton Ventura
+## Codigo Shellscript 
+> #!/bin/bash
+> #autor Hamilton Ventura
 
 echo "#################################################"
 echo "########### INSTALAÇÃO AMBIENTE ROBOT ###########"
