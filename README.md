@@ -15,10 +15,10 @@ Este repositório reúne exemplos e exercícios focados em automação de testes
 
 ## Tecnologias utilizadas
 
-- Python (pytest, unittest)
+- Python
 - Selenium WebDriver
-- JavaScript (Jest, Cypress) — caso aplicável
-- Outras ferramentas relevantes
+- Robot FRamework
+
 
 ---
 
