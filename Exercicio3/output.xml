@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.11.2 on linux)" generated="2025-07-27T14:57:03.001851" rpa="false" schemaversion="5">
+<suite id="s1" name="MENU" source="/home/hamilton/Área de trabalho/Automacao-Testes/Exercicio3/MENU.robot">
+<test id="s1-t1" name="caso de teste 01 : pesquisar um produto" line="38">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-07-27T14:57:03.186206" level="INFO">ola</msg>
+<arg>${GREET}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-07-27T14:57:03.185953" elapsed="0.000337"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-07-27T14:57:03.186742" level="INFO">ola, mundo !!</msg>
+<arg>${GREET}, ${NAME} !!</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-07-27T14:57:03.186516" elapsed="0.000288"/>
+</kw>
+<status status="PASS" start="2025-07-27T14:57:03.184676" elapsed="0.002315"/>
+</test>
+<test id="s1-t2" name="caso de teste 02 : executar" line="42">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-07-27T14:57:03.187792" level="INFO">2018-01-16</msg>
+<arg>${DATA}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-07-27T14:57:03.187605" elapsed="0.000252"/>
+</kw>
+<status status="PASS" start="2025-07-27T14:57:03.187261" elapsed="0.000767"/>
+</test>
+<test id="s1-t3" name="caso de teste 03 : lista" line="45">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-07-27T14:57:03.189277" level="INFO">aqui é um dos produtos da lista: ARROZ</msg>
+<arg>aqui é um dos produtos da lista: ${LISTA[0]}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-07-27T14:57:03.188615" elapsed="0.000732"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-07-27T14:57:03.190115" level="INFO">aqui é o segundo produto da lista: FEIJAO</msg>
+<arg>aqui é o segundo produto da lista: ${LISTA[1]}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-07-27T14:57:03.189549" elapsed="0.000636"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-07-27T14:57:03.190929" level="INFO">aqui é o segundo produto da lista: BOLA CRAVO</msg>
+<arg>aqui é o segundo produto da lista: ${LISTA[2]}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-07-27T14:57:03.190382" elapsed="0.000612"/>
+</kw>
+<status status="PASS" start="2025-07-27T14:57:03.188274" elapsed="0.002896"/>
+</test>
+<test id="s1-t4" name="caso de teste 04 : dicionário" line="50">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-07-27T14:57:03.192938" level="INFO">O nome do personagem:  joao das neves e email: anethingjhon@gmail.com e idade: 23</msg>
+<arg>O nome do personagem: ${PESSOA.nome} e email: ${PESSOA.email} e idade: ${PESSOA.idade}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-07-27T14:57:03.191762" elapsed="0.001249"/>
+</kw>
+<status status="PASS" start="2025-07-27T14:57:03.191420" elapsed="0.001783"/>
+</test>
+<test id="s1-t5" name="Acessar a pagina Home da loja" line="53">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-07-27T14:57:03.194247" level="INFO">Opening browser 'Chrome' to base url 'Endereco Site'.</msg>
+<msg time="2025-07-27T14:57:07.198983" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-07-27T14:57:07.199309" level="FAIL">InvalidArgumentException: Message: invalid argument
+  (Session info: chrome=138.0.7204.157)
+Stacktrace:
+#0 0x55c3d3dd687a &lt;unknown&gt;
+#1 0x55c3d387b133 &lt;unknown&gt;
+#2 0x55c3d3862bd0 &lt;unknown&gt;
+#3 0x55c3d38611a0 &lt;unknown&gt;
+#4 0x55c3d38617ba &lt;unknown&gt;
+#5 0x55c3d387e809 &lt;unknown&gt;
+#6 0x55c3d3919335 &lt;unknown&gt;
+#7 0x55c3d38f28b2 &lt;unknown&gt;
+#8 0x55c3d391871c &lt;unknown&gt;
+#9 0x55c3d38f2683 &lt;unknown&gt;
+#10 0x55c3d38beb5b &lt;unknown&gt;
+#11 0x55c3d38bff31 &lt;unknown&gt;
+#12 0x55c3d3d9b7cb &lt;unknown&gt;
+#13 0x55c3d3d9f5d4 &lt;unknown&gt;
+#14 0x55c3d3d822c9 &lt;unknown&gt;
+#15 0x55c3d3da0178 &lt;unknown&gt;
+#16 0x55c3d3d666bf &lt;unknown&gt;
+#17 0x55c3d3dc3e78 &lt;unknown&gt;
+#18 0x55c3d3dc4056 &lt;unknown&gt;
+#19 0x55c3d3dd5b96 &lt;unknown&gt;
+#20 0x7fb50abac1f5 &lt;unknown&gt;
+</msg>
+<arg>url=${URL}</arg>
+<arg>browser=${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="FAIL" start="2025-07-27T14:57:03.193869" elapsed="4.013397">InvalidArgumentException: Message: invalid argument
+  (Session info: chrome=138.0.7204.157)
+Stacktrace:
+#0 0x55c3d3dd687a &lt;unknown&gt;
+#1 0x55c3d387b133 &lt;unknown&gt;
+#2 0x55c3d3862bd0 &lt;unknown&gt;
+#3 0x55c3d38611a0 &lt;unknown&gt;
+#4 0x55c3d38617ba &lt;unknown&gt;
+#5 0x55c3d387e809 &lt;unknown&gt;
+#6 0x55c3d3919335 &lt;unknown&gt;
+#7 0x55c3d38f28b2 &lt;unknown&gt;
+#8 0x55c3d391871c &lt;unknown&gt;
+#9 0x55c3d38f2683 &lt;unknown&gt;
+#10 0x55c3d38beb5b &lt;unknown&gt;
+#11 0x55c3d38bff31 &lt;unknown&gt;
+#12 0x55c3d3d9b7cb &lt;unknown&gt;
+#13 0x55c3d3d9f5d4 &lt;unknown&gt;
+#14 0x55c3d3d822c9 &lt;unknown&gt;
+#15 0x55c3d3da0178 &lt;unknown&gt;
+#16 0x55c3d3d666bf &lt;unknown&gt;
+#17 0x55c3d3dc3e78 &lt;unknown&gt;
+#18 0x55c3d3dc4056 &lt;unknown&gt;
+#19 0x55c3d3dd5b96 &lt;unknown&gt;
+#20 0x7fb50abac1f5 &lt;unknown&gt;
+</status>
+</kw>
+<status status="FAIL" start="2025-07-27T14:57:03.193451" elapsed="4.014253">InvalidArgumentException: Message: invalid argument
+  (Session info: chrome=138.0.7204.157)
+Stacktrace:
+#0 0x55c3d3dd687a &lt;unknown&gt;
+#1 0x55c3d387b133 &lt;unknown&gt;
+#2 0x55c3d3862bd0 &lt;unknown&gt;
+#3 0x55c3d38611a0 &lt;unknown&gt;
+#4 0x55c3d38617ba &lt;unknown&gt;
+#5 0x55c3d387e809 &lt;unknown&gt;
+#6 0x55c3d3919335 &lt;unknown&gt;
+#7 0x55c3d38f28b2 &lt;unknown&gt;
+#8 0x55c3d391871c &lt;unknown&gt;
+#9 0x55c3d38f2683 &lt;unknown&gt;
+#10 0x55c3d38beb5b &lt;unknown&gt;
+#11 0x55c3d38bff31 &lt;unknown&gt;
+#12 0x55c3d3d9b7cb &lt;unknown&gt;
+#13 0x55c3d3d9f5d4 &lt;unknown&gt;
+#14 0x55c3d3d822c9 &lt;unknown&gt;
+#15 0x55c3d3da0178 &lt;unknown&gt;
+#16 0x55c3d3d666bf &lt;unknown&gt;
+#17 0x55c3d3dc3e78 &lt;unknown&gt;
+#18 0x55c3d3dc4056 &lt;unknown&gt;
+#19 0x55c3d3dd5b96 &lt;unknown&gt;
+#20 0x7fb50abac1f5 &lt;unknown&gt;
+</status>
+</test>
+<test id="s1-t6" name="digitar o login &quot;HAMILTONVR&quot; e senha &quot;HVR275&quot;" line="57">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-07-27T14:57:07.209173" level="INFO">Typing text 'HAMILTONVR' into text field 'id=j_idt233'.</msg>
+<msg time="2025-07-27T14:57:07.332589" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-07-27T14:57:07.332876" level="FAIL">Element with locator 'id=j_idt233' not found.</msg>
+<arg>id=j_idt233</arg>
+<arg>${LOGINS}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="FAIL" start="2025-07-27T14:57:07.208660" elapsed="0.128090">Element with locator 'id=j_idt233' not found.</status>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>id=j_idt237</arg>
+<arg>${SENHAS}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-07-27T14:57:07.337108" elapsed="0.000055"/>
+</kw>
+<status status="FAIL" start="2025-07-27T14:57:07.208189" elapsed="0.129233">Element with locator 'id=j_idt233' not found.</status>
+</test>
+<test id="s1-t7" name="caso de teste 06 : clicar no botao Logar" line="61">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-07-27T14:57:07.338364" level="INFO">Clicking element 'id=j_idt263'.</msg>
+<msg time="2025-07-27T14:57:07.422072" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-07-27T14:57:07.422271" level="FAIL">Element with locator 'id=j_idt263' not found.</msg>
+<arg>id=j_idt263</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2025-07-27T14:57:07.338094" elapsed="0.086707">Element with locator 'id=j_idt263' not found.</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>id=j_idt263</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-07-27T14:57:07.425133" elapsed="0.000050"/>
+</kw>
+<status status="FAIL" start="2025-07-27T14:57:07.337710" elapsed="0.087709">Element with locator 'id=j_idt263' not found.</status>
+</test>
+<test id="s1-t8" name="caso de teste 07" line="65">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-07-27T14:57:07.426267" level="INFO">Clicking element 'class=fb-button-inner'.</msg>
+<msg time="2025-07-27T14:57:07.511189" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-07-27T14:57:07.511458" level="FAIL">Element with locator 'class=fb-button-inner' not found.</msg>
+<arg>class=fb-button-inner</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2025-07-27T14:57:07.426018" elapsed="0.086406">Element with locator 'class=fb-button-inner' not found.</status>
+</kw>
+<status status="FAIL" start="2025-07-27T14:57:07.425678" elapsed="0.087366">Element with locator 'class=fb-button-inner' not found.</status>
+</test>
+<test id="s1-t9" name="Teste DatabaseLibrary" line="73">
+<kw name="Connect To Database Using Custom Params" owner="DatabaseLibrary">
+<msg time="2025-07-27T14:57:07.513817" level="WARN">Keyword 'DatabaseLibrary.Connect To Database Using Custom Params' is deprecated. Use new `Connect To Database` keyword with custom parameters instead.
+The deprecated keyword will be removed in future versions.</msg>
+<msg time="2025-07-27T14:57:07.514863" level="FAIL">ModuleNotFoundError: No module named 'cx_Oracle'</msg>
+<arg>cx_Oracle</arg>
+<arg>'${user}/${SENHA}@${db_host}:${1521}/${db_sid}'</arg>
+<doc>*DEPRECATED* Use new `Connect To Database` keyword with custom parameters instead.
+The deprecated keyword will be removed in future versions.</doc>
+<status status="FAIL" start="2025-07-27T14:57:07.513756" elapsed="0.002875">ModuleNotFoundError: No module named 'cx_Oracle'</status>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>conectado com sucesso!</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-07-27T14:57:07.516946" elapsed="0.000052"/>
+</kw>
+<status status="FAIL" start="2025-07-27T14:57:07.513376" elapsed="0.003865">ModuleNotFoundError: No module named 'cx_Oracle'</status>
+</test>
+<test id="s1-t10" name="Teste consulta" line="77">
+<kw name="Query" owner="DatabaseLibrary">
+<msg time="2025-07-27T14:57:07.518121" level="FAIL">ValueError: No database connection is open.</msg>
+<var>@{queryResults}</var>
+<arg>select * from SBR_PRODUTO where CODIGO_BARRA = 'OD1507ZZZ220V'</arg>
+<doc>Runs a query with the ``select_statement`` and returns the result as list of rows.
+The type of row values depends on the database module -
+usually they are tuples or tuple-like objects.</doc>
+<status status="FAIL" start="2025-07-27T14:57:07.517880" elapsed="0.001357">ValueError: No database connection is open.</status>
+</kw>
+<kw name="Log Many" owner="BuiltIn">
+<arg>@{queryResults}</arg>
+<doc>Logs the given messages as separate entries using the INFO level.</doc>
+<status status="NOT RUN" start="2025-07-27T14:57:07.519529" elapsed="0.000048"/>
+</kw>
+<status status="FAIL" start="2025-07-27T14:57:07.517540" elapsed="0.002303">ValueError: No database connection is open.</status>
+</test>
+<test id="s1-t11" name="Teste desconectar" line="84">
+<kw name="Disconnect From Database" owner="DatabaseLibrary">
+<msg time="2025-07-27T14:57:07.522074" level="INFO">No open database connection to close</msg>
+<doc>Disconnects from the database.</doc>
+<status status="PASS" start="2025-07-27T14:57:07.520511" elapsed="0.001659"/>
+</kw>
+<status status="PASS" start="2025-07-27T14:57:07.520161" elapsed="0.002261"/>
+</test>
+<doc>Exemplo utilizando espaços.</doc>
+<status status="FAIL" start="2025-07-27T14:57:03.003070" elapsed="4.519851"/>
+</suite>
+<statistics>
+<total>
+<stat pass="5" fail="6" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="MENU" id="s1" pass="5" fail="6" skip="0">MENU</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-07-27T14:57:02.998764" level="WARN">Error in file '/home/hamilton/Área de trabalho/Automacao-Testes/Exercicio3/MENU.robot' on line 19: Singular section headers like '*** Variable ***' are deprecated. Use plural format like '*** Variables ***' instead.</msg>
+<msg time="2025-07-27T14:57:07.513817" level="WARN">Keyword 'DatabaseLibrary.Connect To Database Using Custom Params' is deprecated. Use new `Connect To Database` keyword with custom parameters instead.
+The deprecated keyword will be removed in future versions.</msg>
+</errors>
+</robot>

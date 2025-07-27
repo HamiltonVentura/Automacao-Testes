@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.11.2 on linux)" generated="2025-07-27T15:11:26.715322" rpa="false" schemaversion="5">
+<suite id="s1" name="USANDOSETTINGS" source="/home/hamilton/Área de trabalho/Automacao-Testes/Exercicio2/USANDOSETTINGS.robot">
+<test id="s1-t1" name="My Test" line="9">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-07-27T15:11:26.899385" level="INFO">Hello, world!</msg>
+<arg>${MESSAGE}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-07-27T15:11:26.899123" elapsed="0.000353"/>
+</kw>
+<kw name="My Keyword">
+<kw name="Directory Should Exist" owner="OperatingSystem">
+<msg time="2025-07-27T15:11:26.900458" level="INFO" html="true">Directory '&lt;a href="file:///home/hamilton/Área de trabalho/Automacao-Testes/Exercicio2"&gt;/home/hamilton/Área de trabalho/Automacao-Testes/Exercicio2&lt;/a&gt;' exists.</msg>
+<arg>${path}</arg>
+<doc>Fails unless the given path points to an existing directory.</doc>
+<status status="PASS" start="2025-07-27T15:11:26.900219" elapsed="0.000321"/>
+</kw>
+<arg>/home/hamilton/Área de trabalho/Automacao-Testes/Exercicio2</arg>
+<status status="PASS" start="2025-07-27T15:11:26.899801" elapsed="0.000843"/>
+</kw>
+<doc>Example test.</doc>
+<status status="PASS" start="2025-07-27T15:11:26.897847" elapsed="0.002998"/>
+</test>
+<test id="s1-t2" name="Another Test" line="14">
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${MESSAGE}</arg>
+<arg>Hello, world!</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-07-27T15:11:26.901544" elapsed="0.000254"/>
+</kw>
+<status status="PASS" start="2025-07-27T15:11:26.901188" elapsed="0.000805"/>
+</test>
+<doc>Example using the space separated format.</doc>
+<status status="PASS" start="2025-07-27T15:11:26.716505" elapsed="0.185961"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="USANDOSETTINGS" id="s1" pass="2" fail="0" skip="0">USANDOSETTINGS</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
